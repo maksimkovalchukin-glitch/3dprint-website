@@ -10,6 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ═══ Google Analytics 4 + Google Ads ═══
+       1. Замінити G-XXXXXXXXXX → свій GA4 Measurement ID
+       2. Замінити AW-XXXXXXXXXX → свій Google Ads Conversion ID  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');   /* GA4 */
+    gtag('config', 'AW-XXXXXXXXXX'); /* Google Ads */
+  </script>
 </head>
 <body>
 

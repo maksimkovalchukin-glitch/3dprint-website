@@ -92,7 +92,7 @@ function initFilter(gridSel, cardAttr) {
   });
 }
 
-/* Contact form — Formspree async submit */
+/* Contact form — Formspree async submit + Google Ads conversion */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
@@ -105,6 +105,24 @@ function initContactForm() {
       if (res.ok) {
         form.reset();
         if (success) { success.style.display = 'block'; }
+
+        /* ── Google Ads Conversion ──────────────────────────────
+           Замінити 'AW-XXXXXXXXXX/YYYYYYYYYYYYYYYYYY' на свій
+           Conversion ID / Conversion Label з Google Ads кабінету
+           ──────────────────────────────────────────────────── */
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'conversion', {
+            send_to: 'AW-XXXXXXXXXX/YYYYYYYYYYYYYYYYYY'
+          });
+        }
+
+        /* ── GA4 Custom Event ────────────────────────────────── */
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: 'order_form'
+          });
+        }
       }
     } catch {}
   });
