@@ -7,7 +7,7 @@
   <meta name="description" content="Виготовляємо 3D деталі на замовлення: FDM, SLA, SLS друк. Точність до 0.025 мм. Доставка по Україні. Прототипи, механічні деталі, декор." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -19,8 +19,8 @@
     <a href="index.html" class="nav__logo">майстер<span>.</span></a>
     <nav class="nav__links">
       <a href="works.html" data-nav="works">Роботи</a>
-      <a href="index.html#technologies" data-nav="home">Технології</a>
-      <a href="index.html#materials" data-nav="home">Матеріали</a>
+      <a href="index.html#technologies">Технології</a>
+      <a href="index.html#materials">Матеріали</a>
       <a href="contact.html" data-nav="contact">Контакт</a>
     </nav>
     <div class="nav__actions">
@@ -29,40 +29,39 @@
     <button class="nav__burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
   <div class="nav__mobile" id="mobileMenu">
-    <a href="works.html" data-nav="works">Роботи</a>
+    <a href="works.html">Роботи</a>
     <a href="index.html#technologies">Технології</a>
     <a href="index.html#materials">Матеріали</a>
-    <a href="contact.html" data-nav="contact">Контакт</a>
+    <a href="contact.html">Контакт</a>
     <a href="contact.html" class="btn btn--primary">Замовити деталь</a>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero__bg"></div>
   <div class="container hero__inner">
     <div>
       <div class="hero__tag">Точний 3D друк в Україні</div>
-      <h1>Друкуємо деталі<br><em>будь-якої складності</em></h1>
-      <p class="hero__sub">FDM, SLA та SLS технології. Від прототипу до серійної деталі. Точність до&nbsp;0.025&nbsp;мм, доставка по всій Україні.</p>
+      <h1>Виготовляємо деталі<br><em>будь-якої складності</em></h1>
+      <p class="hero__sub">FDM, SLA та SLS технології для промисловості, медицини та прототипування. Від технічного завдання до готової деталі.</p>
       <div class="hero__ctas">
         <a href="contact.html" class="btn btn--primary btn--lg">Замовити деталь</a>
-        <a href="works.html" class="btn btn--ghost btn--lg">Переглянути роботи</a>
+        <a href="works.html" class="btn btn--outline btn--lg">Переглянути роботи</a>
       </div>
-      <div class="hero__stats">
-        <div>
-          <div class="hero__stat-val">0.025<span>мм</span></div>
+      <div class="hero__stats reveal">
+        <div class="hero__stat">
+          <div class="hero__stat-val">0.025<span> мм</span></div>
           <div class="hero__stat-lab">Точність SLA</div>
         </div>
-        <div>
-          <div class="hero__stat-val">600<span>мм</span></div>
-          <div class="hero__stat-lab">Макс. розмір FDM</div>
+        <div class="hero__stat">
+          <div class="hero__stat-val">600<span> мм</span></div>
+          <div class="hero__stat-lab">Макс. FDM поле</div>
         </div>
-        <div>
+        <div class="hero__stat">
           <div class="hero__stat-val">24<span>–72г</span></div>
           <div class="hero__stat-lab">Виготовлення</div>
         </div>
-        <div>
+        <div class="hero__stat">
           <div class="hero__stat-val">100<span>%</span></div>
           <div class="hero__stat-lab">Контроль якості</div>
         </div>
@@ -72,15 +71,15 @@
     <div class="hero__visual">
       <div class="hero__box">
         <div class="hero__box-glow"></div>
-        <div>
+        <div class="hero__print-anim">
           <div class="hero__nozzle"></div>
           <div class="hero__drop"></div>
-          <div class="hero__layers" style="margin-top:12px">
-            <div class="hero__layer" style="width:160px"></div>
-            <div class="hero__layer" style="width:145px"></div>
-            <div class="hero__layer" style="width:130px"></div>
-            <div class="hero__layer" style="width:112px"></div>
-            <div class="hero__layer" style="width:96px"></div>
+          <div class="hero__layers" style="margin-top:10px">
+            <div class="hero__layer" style="width:160px;opacity:.35"></div>
+            <div class="hero__layer" style="width:148px;opacity:.5"></div>
+            <div class="hero__layer" style="width:134px;opacity:.65"></div>
+            <div class="hero__layer" style="width:118px;opacity:.8"></div>
+            <div class="hero__layer" style="width:100px;opacity:1"></div>
           </div>
         </div>
       </div>
@@ -89,48 +88,48 @@
 </section>
 
 <!-- TECHNOLOGIES -->
-<section class="section" id="technologies">
+<section class="section section--bg" id="technologies">
   <div class="container">
     <div class="section__header reveal">
-      <div class="section__tag">Технології</div>
-      <h2>Три технології друку</h2>
-      <p>Обираємо оптимальний метод залежно від геометрії деталі, вимог до точності та матеріалу</p>
+      <div class="section__tag">Технології друку</div>
+      <h2>Три технології — одна майстерня</h2>
+      <p>Підбираємо метод залежно від геометрії, вимог до точності та матеріалу</p>
     </div>
     <div class="tech-cards">
       <div class="tech-card reveal">
-        <div class="tech-card__icon">⚙️</div>
-        <h3>FDM — Екструзія</h3>
+        <div class="tech-card__badge">FDM</div>
+        <h3>Екструзія нитки</h3>
         <div class="tech-card__sub">Fused Deposition Modeling</div>
-        <p>Пошарове нанесення термопластичного матеріалу. Ідеально для великих деталей та функціональних прототипів.</p>
+        <p>Пошарове нанесення термопластику. Ідеально для функціональних деталей, великих прототипів та серійного виробництва.</p>
         <ul class="tech-card__specs">
-          <li>Точність шару 0.05–0.3 мм</li>
-          <li>Максимальний розмір 600×600×900 мм</li>
-          <li>Матеріали: PLA, PETG, ABS, Nylon, TPU</li>
-          <li>Мінімальна партія від 1 штуки</li>
+          <li><strong>Точність</strong> 0.05–0.3 мм шар</li>
+          <li><strong>Поле</strong> до 600 × 600 × 900 мм</li>
+          <li><strong>Матеріали</strong> PLA, PETG, ABS, Nylon, TPU</li>
+          <li><strong>Від</strong> 1 одиниці</li>
         </ul>
       </div>
       <div class="tech-card reveal" style="transition-delay:.1s">
-        <div class="tech-card__icon">💡</div>
-        <h3>SLA — Фотополімер</h3>
+        <div class="tech-card__badge">SLA</div>
+        <h3>Фотополімер</h3>
         <div class="tech-card__sub">Stereolithography</div>
-        <p>Засвічування фотополімерної смоли лазером. Висока деталізація, гладка поверхня, ідеально для ювелірки і медицини.</p>
+        <p>Засвічування смоли лазером. Висока деталізація та гладка поверхня — ювелірка, медицина, дрібні компоненти.</p>
         <ul class="tech-card__specs">
-          <li>Точність шару від 0.025 мм</li>
-          <li>Максимальний розмір 145×145×175 мм</li>
-          <li>Матеріали: Standard, ABS-like, Dental Resin</li>
-          <li>Постобробка включена</li>
+          <li><strong>Точність</strong> від 0.025 мм</li>
+          <li><strong>Поле</strong> 145 × 145 × 175 мм</li>
+          <li><strong>Матеріали</strong> Standard, ABS-like, Dental Resin</li>
+          <li><strong>Постобробка</strong> включена</li>
         </ul>
       </div>
       <div class="tech-card reveal" style="transition-delay:.2s">
-        <div class="tech-card__icon">🔥</div>
-        <h3>SLS — Лазерне спікання</h3>
+        <div class="tech-card__badge">SLS</div>
+        <h3>Лазерне спікання</h3>
         <div class="tech-card__sub">Selective Laser Sintering</div>
-        <p>Спікання порошкового матеріалу лазером. Складна геометрія без підтримок, висока міцність деталей.</p>
+        <p>Спікання порошку нейлону лазером. Складна геометрія без підтримок, висока механічна міцність.</p>
         <ul class="tech-card__specs">
-          <li>Точність ±0.3 мм</li>
-          <li>Матеріали: PA12 Nylon, Glass-filled Nylon</li>
-          <li>Не потребує підтримок</li>
-          <li>Підходить для серійного виробництва</li>
+          <li><strong>Точність</strong> ±0.3 мм</li>
+          <li><strong>Матеріали</strong> PA12, Glass-filled Nylon</li>
+          <li><strong>Підтримки</strong> не потрібні</li>
+          <li><strong>Підходить</strong> для серії</li>
         </ul>
       </div>
     </div>
@@ -138,48 +137,48 @@
 </section>
 
 <!-- PROCESS -->
-<section class="section section--dark">
+<section class="section">
   <div class="container">
     <div class="section__header reveal">
-      <div class="section__tag">Як це працює</div>
+      <div class="section__tag">Порядок роботи</div>
       <h2>4 кроки до готової деталі</h2>
-      <p>Від заявки до доставки — без зайвого клопоту</p>
+      <p>Прозорий процес без прихованих кроків</p>
     </div>
     <div class="process reveal">
       <div class="process-step">
-        <div class="process-step__num">01</div>
+        <div class="process-step__num">Крок 01</div>
         <div class="process-step__icon">📎</div>
-        <h3>Надішліть файл або опис</h3>
-        <p>Завантажте STL, OBJ, STEP — або просто опишіть деталь. Якщо файлу немає — допоможемо з моделюванням.</p>
+        <h3>Надішліть файл або ТЗ</h3>
+        <p>STL, OBJ, STEP, 3MF або просто опис. Якщо файлу немає — допоможемо з моделюванням.</p>
       </div>
       <div class="process-step">
-        <div class="process-step__num">02</div>
-        <div class="process-step__icon">🎯</div>
-        <h3>Погодимо матеріал і строки</h3>
-        <p>Менеджер уточнить вимоги, підбере оптимальний матеріал і технологію, надасть розрахунок вартості.</p>
+        <div class="process-step__num">Крок 02</div>
+        <div class="process-step__icon">📐</div>
+        <h3>Погоджуємо специфікацію</h3>
+        <p>Підбираємо матеріал і технологію, узгоджуємо терміни та вартість.</p>
       </div>
       <div class="process-step">
-        <div class="process-step__num">03</div>
+        <div class="process-step__num">Крок 03</div>
         <div class="process-step__icon">🖨️</div>
-        <h3>Надрукуємо і перевіримо</h3>
-        <p>Виготовляємо деталь і проводимо контроль якості: вимірювання, перевірку геометрії та поверхні.</p>
+        <h3>Виготовляємо та контролюємо</h3>
+        <p>Друкуємо деталь і перевіряємо геометрію перед відправкою.</p>
       </div>
       <div class="process-step">
-        <div class="process-step__num">04</div>
+        <div class="process-step__num">Крок 04</div>
         <div class="process-step__icon">📦</div>
-        <h3>Доставимо по Україні</h3>
-        <p>Відправляємо Новою поштою або іншим перевізником. Самовивіз також доступний.</p>
+        <h3>Доставляємо по Україні</h3>
+        <p>Нова Пошта або самовивіз. Пакуємо для безпечного транспортування.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- WORKS PREVIEW -->
-<section class="section">
+<section class="section section--bg">
   <div class="container">
     <div class="section__header reveal">
-      <div class="section__tag">Наші роботи</div>
-      <h2>Приклади виготовлених деталей</h2>
+      <div class="section__tag">Приклади робіт</div>
+      <h2>Що ми вже надрукували</h2>
       <p>Від мікро-компонентів до великогабаритних прототипів</p>
     </div>
     <div class="works-grid">
@@ -187,231 +186,287 @@
         <div class="work-card__img">
           <div class="work-card__img-placeholder">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="20" stroke="#f97316" stroke-width="2.5" fill="none" stroke-dasharray="4 4"/>
-              <circle cx="32" cy="32" r="8" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <line x1="32" y1="12" x2="32" y2="52" stroke="#f97316" stroke-width="1.5" opacity=".3"/>
-              <line x1="12" y1="32" x2="52" y2="32" stroke="#f97316" stroke-width="1.5" opacity=".3"/>
+              <circle cx="32" cy="32" r="20" stroke="#1a56db" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+              <circle cx="32" cy="32" r="8" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <circle cx="32" cy="32" r="3" fill="#e05b00"/>
             </svg>
           </div>
         </div>
         <div class="work-card__info">
           <div class="work-card__tags">
             <span class="work-card__tag">Механіка</span>
-            <span class="work-card__mat">ABS</span>
+            <span class="work-card__mat">ABS · FDM</span>
           </div>
           <h3>Шестерня редуктора</h3>
-          <p>Замінна шестерня для промислового редуктора, точність ±0.1 мм</p>
+          <p>Замінна шестерня для промислового редуктора. Точність ±0.1 мм.</p>
         </div>
       </div>
 
-      <div class="work-card reveal" style="transition-delay:.1s" data-cat="prototypes">
+      <div class="work-card reveal" style="transition-delay:.07s" data-cat="prototypes">
         <div class="work-card__img">
           <div class="work-card__img-placeholder">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <rect x="12" y="16" width="40" height="32" rx="4" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <rect x="18" y="22" width="14" height="10" rx="2" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".5"/>
-              <rect x="36" y="22" width="10" height="20" rx="2" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".5"/>
+              <rect x="12" y="16" width="40" height="32" rx="3" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <rect x="18" y="22" width="12" height="8" rx="2" stroke="#1a56db" stroke-width="1.5" fill="none" opacity=".5"/>
+              <rect x="34" y="22" width="12" height="8" rx="2" stroke="#1a56db" stroke-width="1.5" fill="none" opacity=".5"/>
+              <rect x="18" y="34" width="28" height="6" rx="2" fill="#e05b00" opacity=".3"/>
             </svg>
           </div>
         </div>
         <div class="work-card__info">
           <div class="work-card__tags">
             <span class="work-card__tag">Прототипи</span>
-            <span class="work-card__mat">PETG</span>
+            <span class="work-card__mat">PETG · FDM</span>
           </div>
           <h3>Корпус для електроніки</h3>
-          <p>Прототип корпусу IoT-пристрою з кріпленнями для плати та вентиляційними отворами</p>
+          <p>IoT-корпус з кріпленнями для плати та USB-роз'єму.</p>
         </div>
       </div>
 
-      <div class="work-card reveal" style="transition-delay:.2s" data-cat="medical">
+      <div class="work-card reveal" style="transition-delay:.14s" data-cat="medical">
         <div class="work-card__img">
           <div class="work-card__img-placeholder">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <ellipse cx="32" cy="32" rx="16" ry="22" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <line x1="20" y1="20" x2="44" y2="20" stroke="#f97316" stroke-width="1.5" opacity=".4"/>
-              <line x1="16" y1="28" x2="48" y2="28" stroke="#f97316" stroke-width="1.5" opacity=".4"/>
-              <line x1="16" y1="36" x2="48" y2="36" stroke="#f97316" stroke-width="1.5" opacity=".4"/>
-              <line x1="20" y1="44" x2="44" y2="44" stroke="#f97316" stroke-width="1.5" opacity=".4"/>
+              <ellipse cx="32" cy="32" rx="16" ry="22" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <line x1="20" y1="21" x2="44" y2="21" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="16" y1="28" x2="48" y2="28" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="16" y1="35" x2="48" y2="35" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="20" y1="42" x2="44" y2="42" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
             </svg>
           </div>
         </div>
         <div class="work-card__info">
           <div class="work-card__tags">
             <span class="work-card__tag">Медицина</span>
-            <span class="work-card__mat">Resin</span>
+            <span class="work-card__mat">Resin · SLA</span>
           </div>
           <h3>Анатомічна модель</h3>
-          <p>Навчальна анатомічна модель для медичного університету, SLA друк з фотополімеру</p>
+          <p>Навчальна анатомічна модель для медичного університету, масштаб 1:1.</p>
         </div>
       </div>
 
-      <div class="work-card reveal" data-cat="decor">
+      <div class="work-card reveal" data-cat="mechanics">
         <div class="work-card__img">
           <div class="work-card__img-placeholder">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <polygon points="32,10 50,20 50,44 32,54 14,44 14,20" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <polygon points="32,18 44,25 44,39 32,46 20,39 20,25" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".5"/>
-            </svg>
-          </div>
-        </div>
-        <div class="work-card__info">
-          <div class="work-card__tags">
-            <span class="work-card__tag">Декор</span>
-            <span class="work-card__mat">PLA</span>
-          </div>
-          <h3>Геометрична ваза</h3>
-          <p>Декоративна ваза з параметричним геометричним візерунком, матове покриття</p>
-        </div>
-      </div>
-
-      <div class="work-card reveal" style="transition-delay:.1s" data-cat="mechanics">
-        <div class="work-card__img">
-          <div class="work-card__img-placeholder">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <rect x="10" y="28" width="44" height="8" rx="2" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <rect x="14" y="22" width="4" height="4" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".6"/>
-              <rect x="22" y="22" width="4" height="4" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".6"/>
-              <rect x="30" y="22" width="4" height="4" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".6"/>
-              <rect x="38" y="22" width="4" height="4" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".6"/>
-              <rect x="46" y="22" width="4" height="4" stroke="#f97316" stroke-width="1.5" fill="none" opacity=".6"/>
+              <rect x="10" y="28" width="44" height="8" rx="2" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <rect x="14" y="20" width="5" height="6" rx="1" fill="#e05b00" opacity=".5"/>
+              <rect x="22" y="20" width="5" height="6" rx="1" fill="#e05b00" opacity=".5"/>
+              <rect x="30" y="20" width="5" height="6" rx="1" fill="#e05b00" opacity=".5"/>
+              <rect x="38" y="20" width="5" height="6" rx="1" fill="#e05b00" opacity=".5"/>
+              <rect x="46" y="20" width="5" height="6" rx="1" fill="#e05b00" opacity=".5"/>
             </svg>
           </div>
         </div>
         <div class="work-card__info">
           <div class="work-card__tags">
             <span class="work-card__tag">Механіка</span>
-            <span class="work-card__mat">Nylon</span>
+            <span class="work-card__mat">Nylon · SLS</span>
           </div>
           <h3>Зубчаста рейка</h3>
-          <p>Зубчаста рейка для лінійного переміщення, нейлон SLS, підвищена зносостійкість</p>
+          <p>Зубчаста рейка для лінійного приводу CNC-верстата.</p>
         </div>
       </div>
 
-      <div class="work-card reveal" style="transition-delay:.2s" data-cat="prototypes">
+      <div class="work-card reveal" style="transition-delay:.07s" data-cat="decor">
         <div class="work-card__img">
           <div class="work-card__img-placeholder">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <rect x="14" y="14" width="36" height="36" rx="4" stroke="#f97316" stroke-width="2.5" fill="none"/>
-              <line x1="14" y1="26" x2="50" y2="26" stroke="#f97316" stroke-width="1.5" opacity=".5"/>
-              <line x1="14" y1="38" x2="50" y2="38" stroke="#f97316" stroke-width="1.5" opacity=".5"/>
-              <line x1="26" y1="14" x2="26" y2="50" stroke="#f97316" stroke-width="1.5" opacity=".5"/>
-              <line x1="38" y1="14" x2="38" y2="50" stroke="#f97316" stroke-width="1.5" opacity=".5"/>
+              <polygon points="32,10 50,20 50,44 32,54 14,44 14,20" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <polygon points="32,18 44,25 44,39 32,46 20,39 20,25" stroke="#1a56db" stroke-width="1.2" fill="none" opacity=".45"/>
+            </svg>
+          </div>
+        </div>
+        <div class="work-card__info">
+          <div class="work-card__tags">
+            <span class="work-card__tag">Декор</span>
+            <span class="work-card__mat">PLA · FDM</span>
+          </div>
+          <h3>Геометрична ваза</h3>
+          <p>Параметрична ваза з шестигранним візерунком, висота 24 см.</p>
+        </div>
+      </div>
+
+      <div class="work-card reveal" style="transition-delay:.14s" data-cat="prototypes">
+        <div class="work-card__img">
+          <div class="work-card__img-placeholder">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <rect x="14" y="14" width="36" height="36" rx="3" stroke="#1a56db" stroke-width="2" fill="none"/>
+              <line x1="14" y1="26" x2="50" y2="26" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="14" y1="38" x2="50" y2="38" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="26" y1="14" x2="26" y2="50" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
+              <line x1="38" y1="14" x2="38" y2="50" stroke="#1a56db" stroke-width="1.2" opacity=".4"/>
             </svg>
           </div>
         </div>
         <div class="work-card__info">
           <div class="work-card__tags">
             <span class="work-card__tag">Прототипи</span>
-            <span class="work-card__mat">PLA</span>
+            <span class="work-card__mat">PLA · FDM</span>
           </div>
           <h3>Архітектурний макет</h3>
-          <p>Масштабний макет будівлі для презентації замовнику, масштаб 1:100</p>
+          <p>Масштабний макет будівлі для презентації замовнику, масштаб 1:100.</p>
         </div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:40px">
-      <a href="works.html" class="btn btn--ghost">Переглянути всі роботи →</a>
+    <div style="text-align:center;margin-top:36px">
+      <a href="works.html" class="btn btn--outline">Всі роботи →</a>
     </div>
   </div>
 </section>
 
 <!-- ADVANTAGES -->
-<section class="section section--dark">
+<section class="section">
   <div class="container">
     <div class="section__header reveal">
-      <div class="section__tag">Чому ми</div>
-      <h2>Якість без компромісів</h2>
+      <div class="section__tag">Чому нас обирають</div>
+      <h2>Технічна перевага на кожному кроці</h2>
     </div>
     <div class="advantages">
       <div class="advantage-card reveal">
-        <div class="advantage-card__ico">🎯</div>
+        <div class="advantage-card__ico">📏</div>
         <h3>Висока точність</h3>
-        <p>SLA друк з точністю до 0.025 мм. Деталі відповідають кресленням і технічним вимогам.</p>
+        <p>SLA друк від 0.025 мм. Кожна деталь проходить вимірювальний контроль.</p>
       </div>
-      <div class="advantage-card reveal" style="transition-delay:.08s">
+      <div class="advantage-card reveal" style="transition-delay:.07s">
         <div class="advantage-card__ico">⚡</div>
         <h3>Швидке виготовлення</h3>
-        <p>Прості деталі — за 24 години. Складні проекти — від 2 до 5 робочих днів.</p>
+        <p>Прості деталі за 24 год. Складні проекти — 2–5 робочих днів.</p>
       </div>
-      <div class="advantage-card reveal" style="transition-delay:.16s">
+      <div class="advantage-card reveal" style="transition-delay:.14s">
         <div class="advantage-card__ico">🧪</div>
         <h3>Широкий вибір матеріалів</h3>
-        <p>PLA, PETG, ABS, Nylon, TPU, Resin та спеціалізовані матеріали для медицини і промисловості.</p>
+        <p>PLA, PETG, ABS, Nylon, TPU, Resin та медичні та армовані варіанти.</p>
       </div>
-      <div class="advantage-card reveal" style="transition-delay:.24s">
+      <div class="advantage-card reveal" style="transition-delay:.21s">
         <div class="advantage-card__ico">🛡️</div>
-        <h3>Контроль якості</h3>
-        <p>Кожна деталь проходить вимірювальний контроль перед відправкою замовнику.</p>
+        <h3>Гарантія результату</h3>
+        <p>Не відповідає ТЗ — передрукуємо безкоштовно. Без компромісів.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MATERIALS -->
-<section class="section" id="materials">
+<!-- SPEC TABLE -->
+<section class="section section--bg" id="materials">
   <div class="container">
     <div class="section__header reveal">
       <div class="section__tag">Матеріали</div>
-      <h2>Широкий вибір матеріалів</h2>
-      <p>Підберемо оптимальний матеріал під ваші вимоги до міцності, гнучкості, температурної стійкості та зовнішнього вигляду</p>
+      <h2>Характеристики матеріалів</h2>
+      <p>Підберемо оптимальний матеріал під ваші вимоги до міцності, температури та зовнішнього вигляду</p>
+    </div>
+    <div class="reveal" style="overflow-x:auto">
+      <table class="spec-table">
+        <thead>
+          <tr>
+            <th>Матеріал</th>
+            <th>Технологія</th>
+            <th>Міцність</th>
+            <th>Темп. стійкість</th>
+            <th>Застосування</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PLA</td>
+            <td>FDM</td>
+            <td>Стандартна</td>
+            <td>до 60°C</td>
+            <td>Прототипи, макети, декор</td>
+          </tr>
+          <tr>
+            <td>PETG</td>
+            <td>FDM</td>
+            <td>Добра</td>
+            <td>до 80°C</td>
+            <td>Корпуси, вологостійкі деталі</td>
+          </tr>
+          <tr>
+            <td>ABS</td>
+            <td>FDM</td>
+            <td>Висока</td>
+            <td>до 100°C</td>
+            <td>Технічні деталі, ударостійкі вироби</td>
+          </tr>
+          <tr>
+            <td>Nylon PA12</td>
+            <td>FDM / SLS</td>
+            <td>Дуже висока</td>
+            <td>до 170°C</td>
+            <td>Шестерні, зносостійкі елементи</td>
+          </tr>
+          <tr>
+            <td>TPU / FLEX</td>
+            <td>FDM</td>
+            <td>Гнучка</td>
+            <td>до 80°C</td>
+            <td>Прокладки, ущільнення, захисні елементи</td>
+          </tr>
+          <tr>
+            <td>Resin</td>
+            <td>SLA</td>
+            <td>Стандартна</td>
+            <td>до 60°C</td>
+            <td>Ювелірка, мініатюри, медицина</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="materials-strip reveal">
-      <div class="mat-chip"><span class="mat-chip__dot"></span>PLA — базовий</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>PETG — вологостійкий</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>ABS — ударостійкий</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>Nylon — зносостійкий</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>TPU / FLEX — гнучкий</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>Resin — висока деталізація</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>Carbon Fiber — армований</div>
-      <div class="mat-chip"><span class="mat-chip__dot"></span>Dental Resin — медичний</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>PLA</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>PETG</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>ABS</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>Nylon PA12</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>TPU / FLEX</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>Resin</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>Carbon Fiber</div>
+      <div class="mat-chip"><span class="mat-chip__dot"></span>Dental Resin</div>
     </div>
-    <p style="text-align:center;margin-top:24px;font-size:.9rem">Не знаєте який матеріал обрати? <a href="contact.html" style="color:var(--accent)">Запитайте у нас</a> — підберемо безкоштовно.</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="section section--dark" id="faq">
+<section class="section" id="faq">
   <div class="container">
-    <div class="section__header reveal">
+    <div class="section__header center reveal">
       <div class="section__tag">FAQ</div>
       <h2>Часті запитання</h2>
     </div>
     <div class="faq reveal">
       <div class="faq__item">
         <button class="faq__q"><span>Які формати файлів ви приймаєте?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Приймаємо STL, OBJ, STEP/STP, 3MF, IGES. Якщо у вас немає 3D моделі — опишіть деталь або надішліть фото, ескіз чи креслення. Наші інженери нададуть консультацію.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Приймаємо STL, OBJ, STEP/STP, 3MF, IGES. Якщо файлу немає — надішліть фото, ескіз або опишіть деталь. Наші інженери нададуть консультацію і за потреби допоможуть із 3D-моделюванням.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Яка мінімальна партія замовлення?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Мінімальна партія — 1 одиниця. Ми однаково охоче беремося за одиничні вироби та серійне виготовлення. Вартість одиниці при великих тиражах буде нижчою.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Від 1 одиниці. Беремося за одиничні вироби і серійне виготовлення. При збільшенні партії — нижча собівартість одиниці.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Скільки часу займає виготовлення?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Прості деталі FDM/SLA — 24–48 годин. Складні проекти або великі партії — 3–7 робочих днів. Точний термін повідомляємо після аналізу вашого файлу.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">FDM/SLA прості деталі — 24–48 год. Складні проекти або великі партії — 3–7 робочих днів. Точний термін повідомляємо після аналізу файлу.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Чи є постобробка (шліфування, фарбування)?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Так. Ми пропонуємо шліфування, заливку та фарбування деталей. Також доступне просочення для підвищення міцності і водостійкості. Деталі уточнюйте під час замовлення.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Так. Виконуємо шліфування, ґрунтування та фарбування. Також доступне просочення смолою для підвищення міцності і водостійкості FDM деталей. Уточніть при замовленні.</div></div>
       </div>
       <div class="faq__item">
-        <button class="faq__q"><span>Як дізнатися вартість до замовлення?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Надішліть файл або опис деталі у <a href="contact.html" style="color:var(--accent)">формі замовлення</a> або напряму в Telegram. Безкоштовно розрахуємо вартість і запропонуємо оптимальний матеріал протягом 2–4 годин у робочий день.</div></div>
+        <button class="faq__q"><span>Як розрахувати вартість?</span><span class="faq__icon">+</span></button>
+        <div class="faq__a"><div class="faq__a-inner">Надішліть файл або опис у <a href="contact.html" style="color:var(--blue)">формі замовлення</a> або в Telegram. Безкоштовно розрахуємо вартість і строки протягом 2–4 год у робочий день.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="section">
+<!-- CTA -->
+<section class="section section--bg">
   <div class="container">
     <div class="cta-banner reveal">
-      <div class="section__tag">Готові почати?</div>
+      <div class="section__tag" style="color:var(--accent)">Готові до роботи</div>
       <h2>Є деталь, яку потрібно надрукувати?</h2>
-      <p>Надішліть файл або опишіть задачу — розрахуємо вартість безкоштовно протягом кількох годин.</p>
+      <p>Надішліть файл або опишіть задачу — безкоштовно розрахуємо вартість і строки.</p>
       <div class="ctas">
         <a href="contact.html" class="btn btn--primary btn--lg">Замовити деталь</a>
-        <a href="works.html" class="btn btn--ghost btn--lg">Переглянути приклади</a>
+        <a href="works.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,.25);color:#fff">Переглянути роботи</a>
       </div>
     </div>
   </div>
@@ -423,7 +478,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a href="index.html" class="nav__logo">майстер<span>.</span></a>
-        <p>3D друк деталей будь-якої складності. FDM, SLA, SLS.</p>
+        <p>3D друк деталей будь-якої складності. FDM, SLA, SLS технології.</p>
       </div>
       <div class="footer__col">
         <h4>Послуги</h4>
@@ -446,7 +501,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p style="color:var(--text-muted)">© 2026 майстер. Всі права захищені.</p>
+      <p>© 2026 майстер. Всі права захищені.</p>
       <div class="footer__socials">
         <a href="https://t.me/your_telegram" target="_blank" title="Telegram">✈</a>
       </div>

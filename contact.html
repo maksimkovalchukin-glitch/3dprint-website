@@ -7,7 +7,7 @@
   <meta name="description" content="Замовити 3D друк деталей. Надішліть STL або опис — безкоштовно розрахуємо вартість і строки виготовлення." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -29,21 +29,20 @@
     <button class="nav__burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
   <div class="nav__mobile" id="mobileMenu">
-    <a href="works.html" data-nav="works">Роботи</a>
+    <a href="works.html">Роботи</a>
     <a href="index.html#technologies">Технології</a>
     <a href="index.html#materials">Матеріали</a>
-    <a href="contact.html" data-nav="contact">Контакт</a>
+    <a href="contact.html">Контакт</a>
     <a href="contact.html" class="btn btn--primary">Замовити деталь</a>
   </div>
 </header>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero__bg"></div>
   <div class="container page-hero__inner">
     <div class="page-hero__tag">Замовлення</div>
     <h1>Замовити деталь</h1>
-    <p>Надішліть файл або опишіть задачу — безкоштовно розрахуємо вартість і строки виготовлення протягом кількох годин</p>
+    <p>Надішліть файл або технічне завдання — безкоштовно розрахуємо вартість і строки виготовлення протягом кількох годин</p>
   </div>
 </section>
 
@@ -54,8 +53,9 @@
 
       <!-- INFO -->
       <div>
-        <h2>Як з нами зв'язатись</h2>
-        <p class="mt-16 mb-32">Напишіть у будь-який зручний спосіб або заповніть форму — відповімо в найближчий робочий час.</p>
+        <h2>Зв'язок та реквізити</h2>
+        <p class="mt-16">Напишіть у зручний спосіб або заповніть форму праворуч — відповімо в найближчий робочий час.</p>
+
         <div class="contact-links">
           <a href="https://t.me/your_telegram" target="_blank" class="contact-link">
             <span class="contact-link__ico">✈️</span>
@@ -80,20 +80,31 @@
           </a>
         </div>
 
-        <div style="margin-top:32px;padding:24px;border-radius:12px;border:1px solid var(--border);background:var(--bg-card)">
-          <div style="font-size:.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;font-weight:600">Режим роботи</div>
-          <div style="font-weight:600;margin-bottom:4px">Пн–Пт: 9:00–18:00</div>
-          <div style="font-size:.875rem;color:var(--text-muted)">Сб–Нд: виготовлення триває, відповіді з понеділка</div>
+        <div class="info-box" style="margin-top:16px">
+          <div class="info-box__label">Режим роботи</div>
+          <div class="info-box__val">Пн–Пт: 9:00–18:00</div>
+          <div class="info-box__sub">Сб–Нд: виробництво триває, відповіді — з понеділка</div>
         </div>
 
-        <div style="margin-top:16px;padding:20px;border-radius:12px;border:1px solid rgba(249,115,22,.2);background:rgba(249,115,22,.06)">
-          <div style="font-weight:700;color:var(--accent);margin-bottom:6px">💬 Нема 3D файлу?</div>
-          <div style="font-size:.875rem;color:var(--text-muted)">Не проблема — надішліть фото, ескіз або просто опишіть деталь. Допоможемо з підготовкою моделі.</div>
+        <div class="info-box info-box--accent" style="margin-top:12px">
+          <div class="info-box__label">Немає 3D файлу?</div>
+          <div class="info-box__sub">Надішліть фото, ескіз або опишіть деталь — допоможемо з моделюванням.</div>
+        </div>
+
+        <div style="margin-top:28px">
+          <div style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:12px">Прийомлені формати файлів</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-size:.78rem;font-weight:600;background:var(--surface-2);color:var(--text-2)">STL</span>
+            <span style="padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-size:.78rem;font-weight:600;background:var(--surface-2);color:var(--text-2)">OBJ</span>
+            <span style="padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-size:.78rem;font-weight:600;background:var(--surface-2);color:var(--text-2)">STEP</span>
+            <span style="padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-size:.78rem;font-weight:600;background:var(--surface-2);color:var(--text-2)">3MF</span>
+            <span style="padding:4px 10px;border-radius:4px;border:1px solid var(--border);font-size:.78rem;font-weight:600;background:var(--surface-2);color:var(--text-2)">IGES</span>
+          </div>
         </div>
       </div>
 
       <!-- FORM -->
-      <div class="contact-form-wrap">
+      <div>
         <h2 class="mb-32">Форма замовлення</h2>
         <div id="formSuccess" class="form-success">✅ Заявку отримано! Зв'яжемось найближчим часом.</div>
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
@@ -107,7 +118,6 @@
               <input type="text" name="contact" required placeholder="+380... або @username" />
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Матеріал</label>
@@ -116,30 +126,27 @@
                 <option>PLA — стандартний</option>
                 <option>PETG — вологостійкий</option>
                 <option>ABS — ударостійкий</option>
-                <option>Nylon — зносостійкий</option>
+                <option>Nylon PA12 — зносостійкий</option>
                 <option>TPU / FLEX — гнучкий</option>
-                <option>Resin (SLA) — висока деталізація</option>
+                <option>Resin SLA — висока деталізація</option>
                 <option>SLS Nylon — без підтримок</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Кількість одиниць</label>
-              <input type="number" name="quantity" min="1" placeholder="1" />
+              <label>Кількість, шт.</label>
+              <input type="number" name="quantity" min="1" value="1" />
             </div>
           </div>
-
           <div class="form-group">
-            <label>Опис деталі</label>
-            <textarea name="message" rows="5" required placeholder="Опишіть деталь: призначення, розміри, вимоги до міцності, особливості геометрії. Чим детальніше — тим точніший розрахунок."></textarea>
+            <label>Опис деталі та вимоги</label>
+            <textarea name="message" rows="5" required placeholder="Призначення деталі, розміри, допуски, вимоги до міцності та поверхні. Чим детальніше — тим точніший розрахунок."></textarea>
           </div>
-
           <div class="form-group">
             <label>Файл деталі (необов'язково)</label>
             <input type="file" name="file" accept=".stl,.obj,.step,.stp,.3mf,.iges,.igs" />
-            <small style="color:var(--text-muted);font-size:.8rem;margin-top:4px">STL, OBJ, STEP, 3MF, IGES. Якщо файлу немає — просто опишіть деталь вище.</small>
+            <small>Підтримуються STL, OBJ, STEP, 3MF, IGES. Якщо файлу немає — просто опишіть деталь.</small>
           </div>
-
-          <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Надіслати заявку</button>
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center">Надіслати заявку</button>
           <p class="form-note">Або напишіть одразу в <a href="https://t.me/your_telegram" target="_blank">Telegram @your_telegram</a></p>
         </form>
       </div>
@@ -149,32 +156,32 @@
 </section>
 
 <!-- FAQ -->
-<section class="section section--dark" id="faq">
+<section class="section section--bg" id="faq">
   <div class="container">
-    <div class="section__header reveal">
+    <div class="section__header center reveal">
       <div class="section__tag">FAQ</div>
       <h2>Часті запитання</h2>
     </div>
     <div class="faq reveal">
       <div class="faq__item">
         <button class="faq__q"><span>Скільки коштує 3D друк?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Вартість залежить від технології, матеріалу, розміру деталі та необхідної точності. Надішліть файл або опис — безкоштовно розрахуємо точну вартість протягом 2–4 годин у робочий день.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Вартість залежить від технології, матеріалу, об'єму і складності деталі. Надішліть файл або опис — безкоштовно розрахуємо вартість протягом 2–4 годин у робочий день.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Яка мінімальна партія?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Від 1 одиниці. Беремося за одиничні вироби та серійне виготовлення. При збільшенні тиражу вартість одиниці знижується.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Від 1 одиниці. Беремося за штучні вироби і серійне виготовлення. При збільшенні партії — нижча вартість одиниці.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Якщо у мене немає 3D файлу?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Не проблема. Надішліть фото, ескіз, технічне креслення або просто опишіть деталь словами. Наші інженери допоможуть з підготовкою 3D моделі — уточніть цю послугу при зверненні.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Надішліть фото, ескіз, технічне креслення або просто опишіть деталь словами. Наші інженери нададуть консультацію і за потреби допоможуть підготувати 3D-модель.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q"><span>Як відбувається доставка?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Відправляємо Новою Поштою або іншим зручним перевізником по всій Україні. Самовивіз також доступний. Деталі упаковуємо для захисту від пошкоджень при транспортуванні.</div></div>
+        <div class="faq__a"><div class="faq__a-inner">Відправляємо Новою Поштою або іншим зручним перевізником по всій Україні. Самовивіз також доступний. Деталі надійно упаковуємо для захисту при транспортуванні.</div></div>
       </div>
       <div class="faq__item">
-        <button class="faq__q"><span>Чи є гарантія на деталі?</span><span class="faq__icon">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">Так. Кожна деталь проходить контроль якості перед відправкою. Якщо виріб не відповідає погодженим характеристикам — передрукуємо безкоштовно.</div></div>
+        <button class="faq__q"><span>Чи є гарантія на виготовлені деталі?</span><span class="faq__icon">+</span></button>
+        <div class="faq__a"><div class="faq__a-inner">Так. Кожна деталь проходить вимірювальний контроль перед відправкою. Якщо виріб не відповідає погодженому ТЗ — передрукуємо безкоштовно.</div></div>
       </div>
     </div>
   </div>
@@ -209,7 +216,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p style="color:var(--text-muted)">© 2026 майстер. Всі права захищені.</p>
+      <p>© 2026 майстер. Всі права захищені.</p>
       <div class="footer__socials">
         <a href="https://t.me/your_telegram" target="_blank" title="Telegram">✈</a>
       </div>
